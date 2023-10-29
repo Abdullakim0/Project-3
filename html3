@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="c.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Welcome to my site</h1>
+    </div>
+    <div class="content">
+      <h2>My home</h2>
+    </div>
+    <div class="content">
+      <!-- Main content goes here -->
+    </div>
+    <div class="menu">
+      <ul>
+        <li>Contact</li>
+        <li>My job</li>
+        <li>My hobby</li>
+        <li>After hours</li>
+      </ul>
+    </div>
+    <div class="image">
+      <img src="images.jpg" onclick="enlargePhoto('images.jpg')" class="zoom-button" alt="Zoom">
+    </div>
+    <script>
+      function enlargePhoto(photo) {
+        var newWindow = window.open('', '', 'toolbar=no, scrollbars=no, location=no, status=no, menubar=no, resizable=no, width=800, height=600');
+        newWindow.document.write('<html><head><title>Enlarged Photo</title></head><body>');
+        newWindow.document.write('<img src="' + photo + '" onclick="window.close();" style="cursor:pointer;">');
+        newWindow.document.write('</body></html>');
+        newWindow.document.close(); // Added this line to ensure proper rendering
+      }
+    </script>
+    <div class="footer">
+      <p>&copy; Abdullakim</p>
+    </div>
+  </div>
+</body>
+</html>
