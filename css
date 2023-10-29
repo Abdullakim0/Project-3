@@ -1,0 +1,108 @@
+.header{
+
+width:100%;
+
+text-align:center;
+
+position:relative;
+
+background-color:#f0f0f0;
+
+animation-name:textmove;
+
+animation-duration:5s;
+
+animation-iteration-count:infinite;
+
+}
+
+@keyframes textmove{
+
+0%{
+
+left:0;
+
+color:red;
+
+}
+
+25%{
+
+left:25%;
+
+color:orange;
+
+}
+
+50%{
+
+left:50%;
+
+color:blue;
+
+}
+
+75%{
+
+left:75%;
+
+color:green;
+
+}
+
+100%{
+
+left:100%;
+
+color:purple;
+
+}
+
+}
+#css
+container{
+  font-family:arial;
+  margin:0;
+  padding:0;
+  background-color:#f0f0f0
+}
+.#{
+  background-color:#5E8D9C;
+  color:#FFFFFF;
+  text-align: center;
+  padding:10px;
+}
+.main-content{
+  max-width:800px;
+  margin:0;
+  padding:20px;
+}
+.menu{
+  float:left;
+  width:25%;
+  background-color:#5E8D9C;
+  color:#ffffff;
+}
+.menu ul{
+  list-style:none;
+  padding:0;
+}
+.menu li{
+  padding:10px;
+  text-align:center;
+}
+.menu a{
+  color:#ffffff;
+  text-decoration:none;
+}
+.footer{
+  background-color:#5E8D9C;
+  color:#ffffff;
+  text-align:center;
+  padding:10px;
+  clear:both;
+}
+.zoom-button{
+cursor:pointer;
+border:none;
+}
